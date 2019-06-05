@@ -183,6 +183,7 @@ nav a {
     font-size: 200%;
     text-decoration: none ;
     color: gray;
+    padding-left: 180px;
     border-bottom: 2px solid black;
   }
 }
@@ -279,7 +280,7 @@ nav {
 }
 .row {
   font-size: 1.7rem;
-  margin-bottom: 1px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   width: 350px;
@@ -287,6 +288,15 @@ nav {
   border: 1px solid black;
 }
 /*---------- table ------ */
+.workHistory {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+}
+.workHistory h {
+  font-size: 1.9rem;
+  margin: 1.5rem;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -300,4 +310,15 @@ th {
 }
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+/*------- Footer ------- */
+footer {
+  font-size: 1.9rem;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  background-color: Gray;
+  padding-top: 10px;
+  color: white;
+  margin: 1.5rem;
 }

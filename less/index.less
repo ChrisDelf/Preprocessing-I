@@ -78,6 +78,7 @@ html {
 
 @primaryBorder: 1px solid gray;
 @primaryHeader: 3rem;
+@secondaryHeader: 1.9rem;
 @primaryGray: lightgray;
 @boxMargin: 2rem;
 
@@ -164,6 +165,7 @@ nav a
 		font-size: 200%;
 		text-decoration: none ;
 		color: gray;
+		padding-left: 180px;
 		border-bottom: 2px solid black;
 
 
@@ -227,7 +229,7 @@ nav a
  }
 
  .mainCon h {
-    font-size: 1.9rem;
+    font-size: @secondaryHeader;
      .topBoxMargin ();
 
 
@@ -288,14 +290,15 @@ nav a
 
 .midCon h {
 
-   font-size: 1.9rem;
-
+  font-size: @secondaryHeader;
 
 }
 
 .midCon p {
 
    font-size: 1.5rem;
+
+
    .topBoxMargin ();
 }
 
@@ -323,7 +326,7 @@ nav a
 
 .row {
    font-size: 1.7rem;
-   margin-bottom: 1px;
+   padding: 5px;
    .bootStrapping();
 
 
@@ -333,10 +336,29 @@ nav a
 
 /*---------- table ------ */
 
+.workHistory {
+
+   display: flex;
+   flex-wrap: wrap;
+  .topBoxMargin ();
+
+}
+
+.workHistory h {
+
+   font-size: @secondaryHeader;
+   .topBoxMargin ();
+
+
+
+}
+
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+
 }
 
 td, th {
@@ -347,5 +369,26 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+
+
+
+
+/*------- Footer ------- */
+
+footer {
+   font-size: @secondaryHeader;
+   width: 100%;
+   text-align: center;
+   height: 40px;
+   background-color: Gray;
+   padding-top: 10px;
+   color: white;
+   .topBoxMargin ();
+
+
+
+
 }
 
